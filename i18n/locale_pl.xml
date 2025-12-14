@@ -3,6 +3,9 @@
 	<locale>pl</locale>
     <translationContributors>BigFood2307, Ziuta</translationContributors>
     <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Zmiana ceny" />
+        <text name="DFP_PriceChange_Hidden"                 text="Nieznane" />
         <!-- game Settings menu -->
         <text name="DFP_Settings_Title"                     text="Dynamiczne ceny pól" />
         <text name="DFP_ResetNPCs_Title"              		text="Zresetuj NPC" />

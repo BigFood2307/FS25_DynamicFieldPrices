@@ -3,6 +3,9 @@
 	<locale>de</locale>
     <translationContributors>BigFood2307</translationContributors>
     <texts>
+		<!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Preisänderung" />
+        <text name="DFP_PriceChange_Hidden"                 text="unbekannt" />
         <!-- game Settings menu -->
         <text name="DFP_Settings_Title"                     text="Dynamische Feld Preise" />
         <text name="DFP_ResetNPCs_Title"              		text="NPCs zurücksetzen" />
