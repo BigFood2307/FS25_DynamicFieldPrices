@@ -1,4 +1,4 @@
-# FS22_DynamicFieldPrices
+# FS25_DynamicFieldPrices
 
 Makes Field prices more interesting. It might make sense to look out for good deals instead of always buying the closest land.
 Some NPCs are more greedy than others and their economic situation changes over time influencing the prices as well.
@@ -43,11 +43,13 @@ actual_price = baseprice x greediness x economic x discouragement
 
 ### Difficulty
 
-On average fields are now 21% more expensive to buy. However with some luck you can also find certain fields at almost half the original price.
+On average fields are now 21% more expensive to buy (with default settings). However with some luck you can also find certain fields at almost half the original price.
 
 ## Compatibility
 
-Compatible with FS22_BetterContracts. The displayed value is the combined discount from both mods (if BCs discounted fields option is enabled). Price factors from both mods are multiplicative (-10% DFP, -10% BC -> -19%).
+Not currently compatible with FS25_BetterContracts. 
+Both try to adjust the same, window and it is hard to coordinate.
+Will try to fix in the future.
 
 ## Possible future ideas
 
