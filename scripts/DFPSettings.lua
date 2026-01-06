@@ -159,7 +159,7 @@ function DFPSettings.saveSettingsXML(missionInfo)
 
     local xmlFile = XMLFile.create("DynamicFieldPricesXML", missionInfo.savegameDirectory .. "/dynamicFieldPrices.xml", "dynamicFieldPrices")
     if xmlFile ~= nil then
-        xmlFile:setInt("dynamicFieldPrices#version", 2)
+        xmlFile:setInt("dynamicFieldPrices#version", 1)
 
         xmlFile:setFloat("dynamicFieldPrices.greediness#min", DFPSettings.current.MinGreed)
         xmlFile:setFloat("dynamicFieldPrices.greediness#max", DFPSettings.current.MaxGreed)

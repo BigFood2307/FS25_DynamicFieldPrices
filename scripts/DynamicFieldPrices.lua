@@ -1,5 +1,5 @@
 
-source(Utils.getFilename("DFPPricesChangedEvent.lua", g_currentModDirectory .. "events/"))
+source(Utils.getFilename("DFPPricesChangedEvent.lua", g_currentModDirectory .. "scripts/events/"))
 
 DynamicFieldPrices = {}
 
@@ -152,12 +152,6 @@ function DynamicFieldPrices:onMissionLoadFromSavegame(xmlFile, xmlVersion)
             npc.greediness = xmlFile:getFloat(key .. "#greediness")
             npc.economicSit = xmlFile:getFloat(key .. "#economicSit")
 
-            -- Add support for older versions -> convert values
-            if xmlVersion == 1 then
-                npc.greediness = DFPSettings:getRatio("Greed", npc.greediness)
-                npc.economicSit = DFPSettings:getRatio("Eco", npc.economicSit)
-            end
-
             self.npcs[id] = npc
         end
     end)
@@ -202,10 +196,6 @@ function loadedMap(mapNode, failedReason, arguments, callAsyncCallback, ...)
     g_dynamicFieldPrices:initGui()
 end
 
-function load(mission)
---     InGameMenuMapFrame.onClickMap = Utils.appendedFunction(InGameMenuMapFrame.onClickMap, onClickFarmland)
-end
-
 function startMission(mission)
     g_dynamicFieldPrices:onStartMission(mission)
 end
@@ -245,51 +235,10 @@ function showContextBox(self, clickedLand, ...)
     end
 end
 
-
-function onClickFarmland(self, elem, X, Z)
-	-- appended to InGameMenuMapFrame:onClickMap()
-
-    for k,v in pairs(self) do
-        print(k .. ": " .. tostring(v))
-    end
-
-    print(self.mode)
-    print(self.selectedFarmland)
-
--- 	if self.mode ~= InGameMenuMapFrame.MODE_FARMLANDS then return end
-
--- 	local farmland = self.selectedFarmland		
--- 	
--- 	if farmland == nil or not farmland.showOnFarmlandsScreen
--- 		then return
--- 	end
--- 		
--- 	if DFPSettings.current.ShowPriceModifier == false
--- 		then return
--- 	end
--- 	
--- 	local bcFactor = 1
--- 	
--- 	if g_modIsLoaded["FS22_BetterContracts"] then
--- 		
--- 		local preText = self.farmlandValueText:getText()
--- 	
--- 		local difStartIndex = string.find(preText, "%( -")
--- 		local difEndIndex = string.find(preText, "%%%)")
--- 		
--- 		if difStartIndex ~= nil and difEndIndex ~= nil then
--- 			local difStr = string.sub(preText, difStartIndex+3, difEndIndex-1)
--- 			bcFactor = (100-tonumber(difStr))/100.0
--- 		end
--- 	end
--- 	
-end
-
 addModEventListener(DynamicFieldPrices)
 
 g_dynamicFieldPrices = DynamicFieldPrices.new()
 
-Mission00.load = Utils.appendedFunction(Mission00.load, load)
 InGameMenuMapUtil.showContextBox = Utils.appendedFunction(InGameMenuMapUtil.showContextBox, showContextBox)
 BaseMission.loadMapFinished = Utils.appendedFunction(BaseMission.loadMapFinished, loadedMap)
 Mission00.onStartMission = Utils.appendedFunction(Mission00.onStartMission, startMission)

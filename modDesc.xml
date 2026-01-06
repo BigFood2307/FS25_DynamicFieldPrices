@@ -75,7 +75,7 @@ Więcej szczegółowych informacji można znaleźć w projekcie na githubie. (Go
     <multiplayer supported="true"/>
 
     <extraSourceFiles>
-        <sourceFile filename="DynamicFieldPrices.lua"/>
+        <sourceFile filename="scripts/DynamicFieldPrices.lua"/>
         <sourceFile filename="scripts/DFPSettings.lua"/>
     </extraSourceFiles>
 </modDesc>
