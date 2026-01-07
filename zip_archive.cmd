@@ -1,0 +1,1 @@
+"C:\Program Files\7-Zip\7z.exe" a -r -tzip FS25_DynamicFieldPrices gui l10n scripts icon_DynamicFieldPrices.dds modDesc.xml

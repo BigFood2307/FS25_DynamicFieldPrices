@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="104">
+<modDesc descVersion="105">
     <author>BigFood2307</author>
-    <version>0.1.0.0</version>
+    <version>1.0.0.0</version>
 
     <title>
         <en>Dynamic Field Prices</en>
         <de>Dynamische Feld Preise</de>
-		<pt>Preços De Campo Dinâmicos</pt>
-		<br>Preços De Campo Dinâmicos</br>
-		<pl>Dynamiczne Ceny Pól</pl>
+        <pt>Preços De Campo Dinâmicos</pt>
+        <br>Preços De Campo Dinâmicos</br>
+        <pl>Dynamiczne Ceny Pól</pl>
     </title>
 
     <description>
         <en>
-			<![CDATA[
+            <![CDATA[
 Makes Field prices more interesting. It might make sense to look out for good deals instead of always buying the closest land.
 Some NPCs are more greedy than others and their economic situation changes over time influencing the prices as well.
 An extra 10% is added when buying or selling a field. This will strongly limit field flipping.
 Prices change once per day. The difference to the base price in percent is shown when buying land.
 
-For more detailed information check out the project on github. (Google FS25_DynamicFieldPrices)
+For more detailed information check out the project on github: GitHub link: https://github.com/BigFood2307/FS25_DynamicFieldPrices
 
 ]]>
         </en>
-		<de>
-			<![CDATA[
+        <de>
+            <![CDATA[
 Feldpreise werden interessanter gestaltet. Möglicherweise macht es mehr Sinn, nach einem guten Deal zu suchen, statt immer das benachbarte Land zu kaufen.
 Manche NPCs sind gieriger als andere. Außerdem ändert sich ihre finanzielle Situation, was den Preis mit der Zeit ebenfalls verändert.
 Eine Provision von 10% wird bei jedem Kauf/Verkauf angerechnet. Field Flipping wird dadurch stark ausgebremst.
 Preise ändern sich einmal am Tag. Der Unterschied zum Grundpreis in Prozent wird beim Landkauf angezeigt.
 
-Detailiertere Informationen sind im Github Projekt zu finden. (Google FS25_DynamicFieldPrices)
+Detailiertere Informationen sind im Github Projekt zu finden: https://github.com/BigFood2307/FS25_DynamicFieldPrices
 
 ]]>
-		</de>
-		<pt>
-			<![CDATA[
+        </de>
+        <pt>
+            <![CDATA[
 Torna os preços dos terrenos mais interessantes. Pode fazer sentido procurar bons negócios em vez de comprar sempre o terreno mais próximo.
 Alguns NPCs são mais gananciosos que outros e a sua situação económica muda com o tempo, influenciando também os preços.
 É adicionado um extra de 10% quando se compra ou vende um campo. Isto limitará fortemente a troca de campos.
 Os preços mudam uma vez por dia. A diferença para o preço base em percentagem é mostrada quando se compra um terreno.
 
-Para informações mais detalhadas, consulte o projeto no github. (Google FS25_DynamicFieldPrices)
+Para informações mais detalhadas, consulte o projeto no github: https://github.com/BigFood2307/FS25_DynamicFieldPrices
 
 ]]>
-		</pt>
-		<br>
-			<![CDATA[
+        </pt>
+        <br>
+            <![CDATA[
 Torna os preços dos terrenos mais interessantes. Pode fazer sentido procurar bons negócios em vez de comprar sempre o terreno mais próximo.
 Alguns NPCs são mais gananciosos que outros e a sua situação económica muda com o tempo, influenciando também os preços.
 É adicionado um extra de 10% quando se compra ou vende um campo. Isto limitará fortemente a troca de campos.
 Os preços mudam uma vez por dia. A diferença para o preço base em percentagem é mostrada quando se compra um terreno.
 
-Para informações mais detalhadas, consulte o projeto no github. (Google FS25_DynamicFieldPrices)
+Para informações mais detalhadas, consulte o projeto no github: https://github.com/BigFood2307/FS25_DynamicFieldPrices
 
 ]]>
-		</br>
-		<pl>		
-			<![CDATA[
+        </br>
+        <pl>		
+            <![CDATA[
 Sprawia, że ceny w terenie są bardziej interesujące. Warto rozglądać się za dobrymi okazjami, zamiast zawsze kupować najbliższą ziemię.
 Niektórzy NPC są bardziej chciwi niż inni, a ich sytuacja ekonomiczna zmienia się w czasie, wpływając również na ceny.
 Dodatkowe 10% jest dodawane przy zakupie lub sprzedaży pola. Mocno ograniczy to przerzucanie pól.
 Ceny zmieniają się raz dziennie. Różnica w stosunku do ceny bazowej w procentach jest wyświetlana przy zakupie ziemi.
 
-Więcej szczegółowych informacji można znaleźć w projekcie na githubie. (Google FS25_DynamicFieldPrices)
+Więcej szczegółowych informacji można znaleźć w projekcie na githubie: https://github.com/BigFood2307/FS25_DynamicFieldPrices
 
 ]]>		
-		</pl>
-	</description>
+        </pl>
+    </description>
 
-	<l10n filenamePrefix="i18n/locale"/>
-		
+    <l10n filenamePrefix="l10n/locale"/>
+
     <iconFilename>icon_DynamicFieldPrices.dds</iconFilename>
     <multiplayer supported="true"/>
 

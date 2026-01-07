@@ -9,7 +9,7 @@ function DynamicFieldPrices:init()
     self.farmlandManager = g_farmlandManager
     self.isClient = Mission00:getIsClient()
     self.isServer = Mission00:getIsServer()
-    self.name = g_currentModName or "DynamicFieldPrices"
+    self.name = g_currentModName or "FS25_DynamicFieldPrices"
     self.directory = g_currentModDirectory
 
     self.gui = {}
