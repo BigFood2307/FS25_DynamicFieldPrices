@@ -168,7 +168,7 @@ function DFPSettings.saveSettingsXML(missionInfo)
         xmlFile:setFloat("dynamicFieldPrices.discourage#value", DFPSettings.current.Discourage)
         xmlFile:setBool("dynamicFieldPrices.priceModifier", DFPSettings.current.ShowPriceModifier)
 
-        g_dynamicFieldPrices:onMissionSaveToSavegame(xmlFile)
+        DynamicFieldPrices:onMissionSaveToSavegame(xmlFile)
 
         xmlFile:save()
     end
@@ -188,7 +188,7 @@ function DFPSettings.loadSettingsXML(mission, node)
                 DFPSettings.loadSettingsFloat(xmlFile, "discourage#value", "Discourage")
                 DFPSettings.loadSettingsBool(xmlFile, "priceModifier", "ShowPriceModifier")
 
-                g_dynamicFieldPrices:onMissionLoadFromSavegame(xmlFile, version)
+                DynamicFieldPrices:onMissionLoadFromSavegame(xmlFile, version)
 
                 xmlFile:delete()
             end

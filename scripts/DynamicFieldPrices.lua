@@ -3,10 +3,7 @@ source(Utils.getFilename("DFPPricesChangedEvent.lua", g_currentModDirectory .. "
 
 DynamicFieldPrices = {}
 
-local DynamicFieldPrices_mt = Class(DynamicFieldPrices)
-
-function DynamicFieldPrices.new()
-    local self = setmetatable({}, DynamicFieldPrices_mt)
+function DynamicFieldPrices:init()
 
     self.messageCenter = g_messageCenter
     self.farmlandManager = g_farmlandManager
@@ -20,8 +17,6 @@ function DynamicFieldPrices.new()
 
     self.messageCenter:subscribe(MessageType.DAY_CHANGED, self.onDayChanged, self)
     self.messageCenter:subscribe(MessageType.FARMLAND_OWNER_CHANGED, self.onFarmlandStateChanged, self)
-
-    return self
 end
 
 function DynamicFieldPrices:delete()
@@ -188,7 +183,7 @@ function DynamicFieldPrices:guiCompatibility()
 end
 
 function DynamicFieldPrices:loadMap(i3dName)
-    g_dynamicFieldPrices:initGui()
+    DynamicFieldPrices:initGui()
     Mission00.onStartMission = Utils.appendedFunction(Mission00.onStartMission, DynamicFieldPrices.startMission)
     InGameMenuMapUtil.showContextBox = Utils.appendedFunction(InGameMenuMapUtil.showContextBox, DynamicFieldPrices.showContextBox)
     SavegameSettingsEvent.readStream = Utils.appendedFunction(SavegameSettingsEvent.readStream, DynamicFieldPrices.readStream)
@@ -196,15 +191,15 @@ function DynamicFieldPrices:loadMap(i3dName)
 end
 
 function DynamicFieldPrices.startMission(mission)
-    g_dynamicFieldPrices:onStartMission(mission)
+    DynamicFieldPrices:onStartMission(mission)
 end
 
 function DynamicFieldPrices.readStream(e, streamId, connection)
-    g_dynamicFieldPrices:onReadStream(streamId, connection)
+    DynamicFieldPrices:onReadStream(streamId, connection)
 end
 
 function DynamicFieldPrices.writeStream(e, streamId, connection)
-    g_dynamicFieldPrices:onWriteStream(streamId, connection)
+    DynamicFieldPrices:onWriteStream(streamId, connection)
 end
 
 function DynamicFieldPrices.showContextBox(self, clickedLand, ...)
@@ -227,14 +222,14 @@ function DynamicFieldPrices.showContextBox(self, clickedLand, ...)
         end
 
         if DFPSettings.current.ShowPriceModifier then
-            g_dynamicFieldPrices.priceChangeValueElement:setText(difference)
+            DynamicFieldPrices.priceChangeValueElement:setText(difference)
         else
-            g_dynamicFieldPrices.priceChangeValueElement:setText("hidden")
+            DynamicFieldPrices.priceChangeValueElement:setText("hidden")
         end
     end
 end
 
 addModEventListener(DynamicFieldPrices)
 
-g_dynamicFieldPrices = DynamicFieldPrices.new()
+DynamicFieldPrices:init()
 

@@ -38,6 +38,6 @@ end
 
 function DFPPricesChangedEvent:run(connection)
     if connection:getIsServer() then
-        g_dynamicFieldPrices:onNewPricesReceived(self.prices)
+        DynamicFieldPrices:onNewPricesReceived(self.prices)
     end
 end

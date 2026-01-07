@@ -52,7 +52,7 @@ function ChangeDFPDecimalSettingsEvent:run(connection)
     DFPSettings.current[self.settingsId] = self.newValue;
 
     -- recalculate Price with new value
-    g_dynamicFieldPrices:calcPrice()
+    DynamicFieldPrices:calcPrice()
 
     if g_server ~= nil then
         g_server:broadcastEvent(self, false)
