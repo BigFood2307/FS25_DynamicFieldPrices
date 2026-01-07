@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<GUI>
+    <GuiElement profile="dfpFieldBuyContextExtension" id="dfpFieldBuyInfoWindow">
+        <Bitmap profile="fs25_mapContextSeparatorTop" position="0px 0px"/>
+        <Text profile="dfpFieldBuyTitle" position="10px -10px" text="$l10n_DFP_PriceChange_Title"/>
+        <Text profile="dfpFieldBuyValue" position="10px -10px" id="dfpFieldBuyPriceChange" text=""/>
+    </GuiElement>
+    <GUIProfiles>
+        <Profile name="dfpFieldBuyContextExtension" extends="emptyPanel" with="anchorTopLeft">
+            <position value="0px -145px"/>
+            <size value="276px 34px"/>
+        </Profile>
+        <Profile name="dfpFieldBuyTitle" extends="textDefault" with="anchorTopLeft">
+            <size value="256px 13px"/>
+            <textSize value="14px"/>
+            <screenAlign value="topLeft"/>
+            <positionOrigin value="middleLeft"/>
+            <textBold value="true"/>
+            <textAlignment value="left"/>
+            <textLayoutMode value="resize"/>
+        </Profile>
+        <Profile name="dfpFieldBuyValue" extends="dfpFieldBuyTitle" with="anchorTopLeft">
+            <textAlignment value="right"/>
+            <textBold value="false"/>
+        </Profile>
+    </GUIProfiles>
+</GUI>

@@ -4,7 +4,7 @@
     <translationContributors>BigFood2307, Myiamoto86</translationContributors>
     <texts>
         <!-- map context menu -->
-        <text name="DFP_PriceChange_Title"                  text="Mudança de Preço" />
+        <text name="DFP_PriceChange_Title"                  text="Mudança de Preço:" />
         <text name="DFP_PriceChange_Hidden"                 text="Desconhecido" />
         <!-- game Settings menu -->
         <text name="DFP_Settings_Title"                     text="Preços de campo dinâmicos" />

@@ -158,38 +158,32 @@ function DynamicFieldPrices:onMissionLoadFromSavegame(xmlFile, xmlVersion)
 end
 
 function DynamicFieldPrices:initGui()
-    g_gui:loadProfiles(Utils.getFilename("dfp_profiles.xml", self.directory .. "gui/"))
+    local xmlFile = loadXMLFile("Temp", Utils.getFilename("dfp_gui.xml", self.directory .. "gui/"))
+    self.mapFrame = g_inGameMenu.pageMapOverview
 
-    self.gui.contextBoxFarmland = g_inGameMenu.pageMapOverview.contextBoxFarmland
-    self.gui.contextBoxBg = self.gui.contextBoxFarmland:getFirstDescendant(
-        function(e) return e.profile == "fs25_mapContextBoxBgFarmland"
-        end )
-    self.gui.contextButtons = self.gui.contextBoxFarmland:getDescendantById("contextButtonListFarmland")
+    local contextBox = self.mapFrame.contextBoxFarmland
+    local background = contextBox.elements[1]
 
-    local titles = self.gui.contextBoxFarmland:getDescendants(
-        function(e) return e.profile == "fs25_mapContextFarmlandTitle"
-        end )
+    g_gui:loadProfileSet(xmlFile, "GUI.GuiProfiles", g_gui.profiles)
+    g_gui:loadGuiRec(xmlFile, "GUI", contextBox, self.mapFrame)
 
-    self.gui.sizeTitle = titles[1]
-    self.gui.valueTitle = titles[2]
-    self.gui.sizeText = self.gui.contextBoxFarmland:getDescendantByName("farmlandSize")
-    self.gui.valueText = self.gui.contextBoxFarmland:getDescendantByName("farmlandValue")
+    self.contextBoxExtension = contextBox.elements[#contextBox.elements]
+    self.priceChangeValueElement = self.contextBoxExtension.elements[3]
 
-    self.gui.priceChangeTitle = titles[1]:clone(self.gui.contextBoxFarmland)
-    self.gui.priceChangeTitle:setText(g_i18n:getText("DFP_PriceChange_Title"))
-    self.gui.priceChangeText = self.gui.contextBoxFarmland:getDescendantByName("farmlandSize"):clone(self.gui.contextBoxFarmland)
-    self.gui.priceChangeText.name = "farmlandChange"
+    local farmlandBoxHeight = contextBox.size[2]
+    local farmlandBoxBgHeight = background.size[2]
 
-    self.gui.contextBoxBg:applyProfile("DFP_mapContextBoxBgFarmland")
-    self.gui.contextButtons:applyProfile("DFP_mapContextButtonList")
+    contextBox:setSize(nil, farmlandBoxHeight + self.contextBoxExtension.size[2])
+    background:setSize(nil, farmlandBoxBgHeight + self.contextBoxExtension.size[2])
+end
 
-    self.gui.priceChangeTitle:applyProfile("DFP_priceChangeTitle")
-    self.gui.priceChangeText:applyProfile("DFP_priceChangeText")
+function DynamicFieldPrices:guiCompatibility()
+    if g_modIsLoaded["FS25_precisionFarming"] then
 
-    self.gui.sizeTitle:applyProfile("DFP_sizeTitle")
-    self.gui.sizeText:applyProfile("DFP_sizeText")
-    self.gui.valueTitle:applyProfile("DFP_valueTitle")
-    self.gui.valueText:applyProfile("DFP_valueText")
+        -- anchor deltas are only recalculated, if they are first deleted. Is there a better solution?
+        self.mapFrame.fieldBuyInfoWindow.anchorDeltas = {}
+        self.mapFrame.fieldBuyInfoWindow:move(0, -self.contextBoxExtension.size[2])
+    end
 end
 
 function loadedMap(mapNode, failedReason, arguments, callAsyncCallback, ...)
@@ -198,6 +192,7 @@ end
 
 function startMission(mission)
     g_dynamicFieldPrices:onStartMission(mission)
+    g_dynamicFieldPrices:guiCompatibility()
 end
 
 function readStream(e, streamId, connection)
@@ -228,9 +223,9 @@ function showContextBox(self, clickedLand, ...)
         end
 
         if DFPSettings.current.ShowPriceModifier then
-            g_dynamicFieldPrices.gui.priceChangeText:setText(difference)
+            g_dynamicFieldPrices.priceChangeValueElement:setText(difference)
         else
-            g_dynamicFieldPrices.gui.priceChangeText:setText("hidden")
+            g_dynamicFieldPrices.priceChangeValueElement:setText("hidden")
         end
     end
 end

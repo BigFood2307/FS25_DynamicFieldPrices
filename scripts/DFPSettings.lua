@@ -5,9 +5,9 @@ DFPSettings.modDir = g_currentModDirectory
 
 DFPSettings.debug = false
 
-source(g_currentModDirectory .. "events/changeDFPCheckSettingsEvent.lua")
-source(g_currentModDirectory .. "events/changeDFPDecimalSettingsEvent.lua")
-source(g_currentModDirectory .. "events/loadDFPSettingsEvent.lua")
+source(g_currentModDirectory .. "scripts/events/changeDFPCheckSettingsEvent.lua")
+source(g_currentModDirectory .. "scripts/events/changeDFPDecimalSettingsEvent.lua")
+source(g_currentModDirectory .. "scripts/events/loadDFPSettingsEvent.lua")
 
 function DFPSettings.init()
     -- init default settings
