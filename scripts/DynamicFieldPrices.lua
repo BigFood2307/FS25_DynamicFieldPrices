@@ -128,6 +128,7 @@ function DynamicFieldPrices:onStartMission(mission)
     if self.isServer then
         self:calcPrice()
     end
+    self:guiCompatibility()
 end
 
 function DynamicFieldPrices:onMissionSaveToSavegame(xmlFile)
@@ -186,24 +187,27 @@ function DynamicFieldPrices:guiCompatibility()
     end
 end
 
-function loadedMap(mapNode, failedReason, arguments, callAsyncCallback, ...)
+function DynamicFieldPrices:loadMap(i3dName)
     g_dynamicFieldPrices:initGui()
+    Mission00.onStartMission = Utils.appendedFunction(Mission00.onStartMission, DynamicFieldPrices.startMission)
+    InGameMenuMapUtil.showContextBox = Utils.appendedFunction(InGameMenuMapUtil.showContextBox, DynamicFieldPrices.showContextBox)
+    SavegameSettingsEvent.readStream = Utils.appendedFunction(SavegameSettingsEvent.readStream, DynamicFieldPrices.readStream)
+    SavegameSettingsEvent.writeStream = Utils.appendedFunction(SavegameSettingsEvent.writeStream, DynamicFieldPrices.writeStream)
 end
 
-function startMission(mission)
+function DynamicFieldPrices.startMission(mission)
     g_dynamicFieldPrices:onStartMission(mission)
-    g_dynamicFieldPrices:guiCompatibility()
 end
 
-function readStream(e, streamId, connection)
+function DynamicFieldPrices.readStream(e, streamId, connection)
     g_dynamicFieldPrices:onReadStream(streamId, connection)
 end
 
-function writeStream(e, streamId, connection)
+function DynamicFieldPrices.writeStream(e, streamId, connection)
     g_dynamicFieldPrices:onWriteStream(streamId, connection)
 end
 
-function showContextBox(self, clickedLand, ...)
+function DynamicFieldPrices.showContextBox(self, clickedLand, ...)
     if self.id == "contextBoxFarmland" then
         local farmland = clickedLand.farmland
         print("Farmland " .. clickedLand.farmland.name .. "!")
@@ -233,10 +237,4 @@ end
 addModEventListener(DynamicFieldPrices)
 
 g_dynamicFieldPrices = DynamicFieldPrices.new()
-
-InGameMenuMapUtil.showContextBox = Utils.appendedFunction(InGameMenuMapUtil.showContextBox, showContextBox)
-BaseMission.loadMapFinished = Utils.appendedFunction(BaseMission.loadMapFinished, loadedMap)
-Mission00.onStartMission = Utils.appendedFunction(Mission00.onStartMission, startMission)
-SavegameSettingsEvent.readStream = Utils.appendedFunction(SavegameSettingsEvent.readStream, readStream)
-SavegameSettingsEvent.writeStream = Utils.appendedFunction(SavegameSettingsEvent.writeStream, writeStream)
 
