@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>es</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Cambio de precio:" />
+        <text name="DFP_PriceChange_Hidden"                 text="desconocido" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Precios dinámicos de parcelas" />
+        <text name="DFP_ResetNPCs_Title"                    text="Reiniciar NPCs" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="La codicia y la situación económica de los NPCs se recalcularán a medianoche. Este ajuste vuelve automáticamente a desactivado después." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Mostrar modificador de precio" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Al comprar o vender parcelas, mostrar el valor actual del modificador de precio" />
+        <text name="DFP_MaxGreed_Title"                     text="Factor de codicia máximo" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Factor de precio máximo para la codicia de un NPC. Los cambios ajustarán los precios de inmediato. Por defecto: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Factor de codicia mínimo" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Factor de precio mínimo para la codicia de un NPC. Los cambios ajustarán los precios de inmediato. Por defecto: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Factor económico máximo" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Factor de precio máximo para la situación económica de un NPC. Los cambios ajustarán los precios de inmediato. Por defecto: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Factor económico mínimo" />
+        <text name="DFP_MinEco_Tooltip"                     text="Factor de precio mínimo para la situación económica de un NPC. Los cambios ajustarán los precios de inmediato. Por defecto: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Factor de disuasión" />
+        <text name="DFP_Discourage_Tooltip"                 text="Fracción del precio que se añade/resta al comprar/vender una parcela. Pensado para desalentar la especulación con parcelas. Los cambios ajustarán los precios de inmediato. Por defecto: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

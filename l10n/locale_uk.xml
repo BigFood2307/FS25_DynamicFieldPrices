@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>uk</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Зміна ціни:" />
+        <text name="DFP_PriceChange_Hidden"                 text="невідомо" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Динамічні ціни полів" />
+        <text name="DFP_ResetNPCs_Title"                    text="Скинути NPC" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Жадібність та економічне становище NPC будуть перевизначені опівночі. Після виконання це налаштування автоматично вимикається." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Показувати множник ціни" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="При купівлі або продажу полів відображати поточний множник ціни." />
+        <text name="DFP_MaxGreed_Title"                     text="Макс. коефіцієнт жадібності" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Максимальний ціновий коефіцієнт жадібності NPC. Зміни негайно впливають на ціни. За замовчуванням: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Мін. коефіцієнт жадібності" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Мінімальний ціновий коефіцієнт жадібності NPC. Зміни негайно впливають на ціни. За замовчуванням: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Макс. економічний коефіцієнт" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Максимальний ціновий коефіцієнт економічного становища NPC. Зміни негайно впливають на ціни. За замовчуванням: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Мін. економічний коефіцієнт" />
+        <text name="DFP_MinEco_Tooltip"                     text="Мінімальний ціновий коефіцієнт економічного становища NPC. Зміни негайно впливають на ціни. За замовчуванням: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Коефіцієнт стримування" />
+        <text name="DFP_Discourage_Tooltip"                 text="Частка ціни, яка додається або віднімається при купівлі чи продажу поля. Призначена для запобігання спекуляціям із полями. Зміни негайно впливають на ціни. За замовчуванням: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

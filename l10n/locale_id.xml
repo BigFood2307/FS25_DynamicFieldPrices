@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>id</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Perubahan Harga:" />
+        <text name="DFP_PriceChange_Hidden"                 text="tidak diketahui" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Harga Lapangan Dinamis" />
+        <text name="DFP_ResetNPCs_Title"                    text="Atur Ulang NPC" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Keserakahan NPC dan situasi ekonomi akan diundi ulang pada tengah malam. Pengaturan ini akan secara otomatis mematikan setelahnya." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Tampilkan Pengubah Harga" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Saat membeli atau menjual lapangan, tampilkan jumlah pengubah harga saat ini" />
+        <text name="DFP_MaxGreed_Title"                     text="Faktor Keserakahan Maksimal" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Faktor harga maksimal untuk nilai keserakahan NPC. Perubahan akan segera menyesuaikan harga. Default: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Faktor Keserakahan Minimal" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Faktor harga minimal untuk nilai keserakahan NPC. Perubahan akan segera menyesuaikan harga. Default: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Faktor Ekonomi Maksimal" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Faktor harga maksimal untuk situasi ekonomi NPC. Perubahan akan segera menyesuaikan harga. Default: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Faktor Ekonomi Minimal" />
+        <text name="DFP_MinEco_Tooltip"                     text="Faktor harga minimal untuk situasi ekonomi NPC. Perubahan akan segera menyesuaikan harga. Default: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Faktor Penolakan" />
+        <text name="DFP_Discourage_Tooltip"                 text="Sebagian dari harga yang ditambahkan/dikurangkan saat lapangan dibeli/dijual. Dirancang untuk mencegah penolakan lapangan. Perubahan akan segera menyesuaikan harga. Default: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

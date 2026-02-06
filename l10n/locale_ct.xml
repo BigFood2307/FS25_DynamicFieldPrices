@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>ct</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="價格變動：" />
+        <text name="DFP_PriceChange_Hidden"                 text="未知" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="動態農田價格" />
+        <text name="DFP_ResetNPCs_Title"                    text="重置NPC" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPC的貪婪程度和經濟狀況將在午夜重新生成。此設定在重置後會自動關閉。" />
+        <text name="DFP_ShowPriceModifier_Title"            text="顯示價格係數" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="在買賣農田時顯示目前的價格調整係數" />
+        <text name="DFP_MaxGreed_Title"                     text="最大貪婪係數" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="NPC貪婪值的最大價格係數。修改後將立即調整價格。預設值：1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="最小貪婪係數" />
+        <text name="DFP_MinGreed_Tooltip"                   text="NPC貪婪值的最小價格係數。修改後將立即調整價格。預設值：0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="最大經濟係數" />
+        <text name="DFP_MaxEco_Tooltip"                     text="NPC經濟狀況的最大價格係數。修改後將立即調整價格。預設值：1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="最小經濟係數" />
+        <text name="DFP_MinEco_Tooltip"                     text="NPC經濟狀況的最小價格係數。修改後將立即調整價格。預設值：0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="抑制係數" />
+        <text name="DFP_Discourage_Tooltip"                 text="買賣農田時按此比例加減價格，用於抑制倒賣農田的行為。修改後將立即調整價格。預設值：0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

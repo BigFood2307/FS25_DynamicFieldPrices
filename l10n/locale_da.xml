@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>da</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Prisændring:" />
+        <text name="DFP_PriceChange_Hidden"                 text="ukendt" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dynamiske markpriser" />
+        <text name="DFP_ResetNPCs_Title"                    text="Nulstil NPC'er" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPC'ernes griskhed og økonomiske situation bliver tilfældigt bestemt igen ved midnat. Denne indstilling slår automatisk fra bagefter." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Vis prismodifikator" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Vis den aktuelle prismodifikator ved køb eller salg af marker." />
+        <text name="DFP_MaxGreed_Title"                     text="Maks. griskheds-faktor" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Maksimal prisfaktor for en NPC's griskhedsværdi. Ændringer justerer priserne med det samme. Standard: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Min. griskheds-faktor" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Minimal prisfaktor for en NPC's griskhedsværdi. Ændringer justerer priserne med det samme. Standard: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Maks. økonomisk faktor" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Maksimal prisfaktor for en NPC's økonomiske situation. Ændringer justerer priserne med det samme. Standard: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Min. økonomisk faktor" />
+        <text name="DFP_MinEco_Tooltip"                     text="Minimal prisfaktor for en NPC's økonomiske situation. Ændringer justerer priserne med det samme. Standard: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Afskrækkelsesfaktor" />
+        <text name="DFP_Discourage_Tooltip"                 text="Andel af prisen der lægges til/trækkes fra ved køb/salg af en mark. Beregnet til at afskrække hurtig videresalg af marker. Ændringer justerer priserne med det samme. Standard: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>
