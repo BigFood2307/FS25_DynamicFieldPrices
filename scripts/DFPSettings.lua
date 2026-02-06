@@ -171,6 +171,14 @@ function DFPSettings.saveSettingsXML(missionInfo)
         DynamicFieldPrices:onMissionSaveToSavegame(xmlFile)
 
         xmlFile:save()
+
+        -- [FIX] Release the XMLFile handle after saving.
+        -- XMLFile.create() allocates an internal file handle in the GIANTS engine.
+        -- save() writes data to disk but does NOT free the handle — delete() does.
+        -- Without this, one handle is leaked per game save (manual or autosave).
+        -- (The loadSettingsXML function at line ~193 correctly calls xmlFile:delete()
+        -- after loading — this save function was just missing the matching call.)
+        xmlFile:delete()
     end
 end
 
