@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>hu</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Árváltozás:" />
+        <text name="DFP_PriceChange_Hidden"                 text="ismeretlen" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dinamikus földárak" />
+        <text name="DFP_ResetNPCs_Title"                    text="NPC-k visszaállítása" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Az NPC-k kapzsisága és gazdasági helyzete éjfélkor újra kisorsolásra kerül. Ez a beállítás utána automatikusan kikapcsol." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Ármódosító megjelenítése" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Földek vásárlásánál vagy eladásánál megmutatja az aktuális ármódosító értékét." />
+        <text name="DFP_MaxGreed_Title"                     text="Max. kapzsisági tényező" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Az NPC kapzsiságának maximális ártényezője. A változások azonnal érvényesülnek. Alapértelmezett: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Min. kapzsisági tényező" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Az NPC kapzsiságának minimális ártényezője. A változások azonnal érvényesülnek. Alapértelmezett: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Max. gazdasági tényező" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Az NPC gazdasági helyzetének maximális ártényezője. A változások azonnal érvényesülnek. Alapértelmezett: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Min. gazdasági tényező" />
+        <text name="DFP_MinEco_Tooltip"                     text="Az NPC gazdasági helyzetének minimális ártényezője. A változások azonnal érvényesülnek. Alapértelmezett: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Visszatartó tényező" />
+        <text name="DFP_Discourage_Tooltip"                 text="Az ár azon hányada, amely hozzáadásra vagy levonásra kerül föld vásárlásakor illetve eladásakor. Célja a földekkel való spekuláció visszaszorítása. A változások azonnal érvényesülnek. Alapértelmezett: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

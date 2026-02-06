@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>sv</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Prisändring:" />
+        <text name="DFP_PriceChange_Hidden"                 text="okänt" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dynamiska fältpriser" />
+        <text name="DFP_ResetNPCs_Title"                    text="Återställ NPC:er" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPC:ernas girighet och ekonomiska situation slumpas om vid midnatt. Denna inställning stängs av automatiskt efteråt." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Visa prismodifierare" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Visa det aktuella prismodifieringsbeloppet vid köp eller försäljning av fält." />
+        <text name="DFP_MaxGreed_Title"                     text="Max girighetsfaktor" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Maximal prisfaktor för en NPC:s girighetsvärde. Ändringar justerar priserna omedelbart. Standard: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Min girighetsfaktor" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Minimal prisfaktor för en NPC:s girighetsvärde. Ändringar justerar priserna omedelbart. Standard: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Max ekonomisk faktor" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Maximal prisfaktor för en NPC:s ekonomiska situation. Ändringar justerar priserna omedelbart. Standard: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Min ekonomisk faktor" />
+        <text name="DFP_MinEco_Tooltip"                     text="Minimal prisfaktor för en NPC:s ekonomiska situation. Ändringar justerar priserna omedelbart. Standard: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Avskräckningsfaktor" />
+        <text name="DFP_Discourage_Tooltip"                 text="Andel av priset som läggs till/dras av vid köp/försäljning av ett fält. Avsett att avskräcka från snabb vidareförsäljning av fält. Ändringar justerar priserna omedelbart. Standard: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

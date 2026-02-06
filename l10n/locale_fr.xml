@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>fr</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Variation de prix :" />
+        <text name="DFP_PriceChange_Hidden"                 text="inconnu" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Prix dynamiques des champs" />
+        <text name="DFP_ResetNPCs_Title"                    text="Réinitialiser les PNJ" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="L'avidité et la situation économique des PNJ seront recalculées à minuit. Ce réglage revient automatiquement sur désactivé après." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Afficher le modificateur de prix" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Lors de l'achat ou de la vente de champs, afficher le montant du modificateur de prix actuel" />
+        <text name="DFP_MaxGreed_Title"                     text="Facteur d'avidité maximum" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Facteur de prix maximum pour l'avidité d'un PNJ. Les modifications ajusteront immédiatement les prix. Par défaut : 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Facteur d'avidité minimum" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Facteur de prix minimum pour l'avidité d'un PNJ. Les modifications ajusteront immédiatement les prix. Par défaut : 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Facteur économique maximum" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Facteur de prix maximum pour la situation économique d'un PNJ. Les modifications ajusteront immédiatement les prix. Par défaut : 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Facteur économique minimum" />
+        <text name="DFP_MinEco_Tooltip"                     text="Facteur de prix minimum pour la situation économique d'un PNJ. Les modifications ajusteront immédiatement les prix. Par défaut : 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Facteur de dissuasion" />
+        <text name="DFP_Discourage_Tooltip"                 text="Fraction du prix ajoutée/soustraite lors de l'achat/vente d'un champ. Destiné à décourager la revente spéculative de champs. Les modifications ajusteront immédiatement les prix. Par défaut : 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

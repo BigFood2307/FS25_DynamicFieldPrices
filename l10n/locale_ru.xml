@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>ru</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Изменение цены:" />
+        <text name="DFP_PriceChange_Hidden"                 text="неизвестно" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Динамические цены полей" />
+        <text name="DFP_ResetNPCs_Title"                    text="Сбросить NPC" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Жадность и экономическое положение NPC будут переопределены в полночь. После выполнения эта настройка автоматически отключается." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Показывать множитель цены" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="При покупке или продаже полей отображать текущий множитель цены." />
+        <text name="DFP_MaxGreed_Title"                     text="Макс. коэффициент жадности" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Максимальный ценовой коэффициент жадности NPC. Изменения немедленно влияют на цены. По умолчанию: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Мин. коэффициент жадности" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Минимальный ценовой коэффициент жадности NPC. Изменения немедленно влияют на цены. По умолчанию: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Макс. экономический коэффициент" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Максимальный ценовой коэффициент экономического положения NPC. Изменения немедленно влияют на цены. По умолчанию: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Мин. экономический коэффициент" />
+        <text name="DFP_MinEco_Tooltip"                     text="Минимальный ценовой коэффициент экономического положения NPC. Изменения немедленно влияют на цены. По умолчанию: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Коэффициент сдерживания" />
+        <text name="DFP_Discourage_Tooltip"                 text="Доля цены, которая добавляется или вычитается при покупке или продаже поля. Предназначена для предотвращения спекуляций с полями. Изменения немедленно влияют на цены. По умолчанию: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

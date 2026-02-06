@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>kr</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="가격 변동:" />
+        <text name="DFP_PriceChange_Hidden"                 text="알 수 없음" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="동적 농지 가격" />
+        <text name="DFP_ResetNPCs_Title"                    text="NPC 초기화" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPC의 탐욕도와 경제 상황이 자정에 새로 생성됩니다. 이 설정은 초기화 후 자동으로 꺼집니다." />
+        <text name="DFP_ShowPriceModifier_Title"            text="가격 배율 표시" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="농지를 매매할 때 현재 적용되는 가격 배율을 표시합니다" />
+        <text name="DFP_MaxGreed_Title"                     text="최대 탐욕 배율" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="NPC 탐욕도의 최대 가격 배율입니다. 변경 시 즉시 가격에 반영됩니다. 기본값: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="최소 탐욕 배율" />
+        <text name="DFP_MinGreed_Tooltip"                   text="NPC 탐욕도의 최소 가격 배율입니다. 변경 시 즉시 가격에 반영됩니다. 기본값: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="최대 경제 배율" />
+        <text name="DFP_MaxEco_Tooltip"                     text="NPC 경제 상황의 최대 가격 배율입니다. 변경 시 즉시 가격에 반영됩니다. 기본값: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="최소 경제 배율" />
+        <text name="DFP_MinEco_Tooltip"                     text="NPC 경제 상황의 최소 가격 배율입니다. 변경 시 즉시 가격에 반영됩니다. 기본값: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="억제 배율" />
+        <text name="DFP_Discourage_Tooltip"                 text="농지 매매 시 가격에 가감되는 비율로, 농지 되팔기를 억제하기 위한 설정입니다. 변경 시 즉시 가격에 반영됩니다. 기본값: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

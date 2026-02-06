@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>cz</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Změna ceny:" />
+        <text name="DFP_PriceChange_Hidden"                 text="neznámá" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dynamické ceny pozemků" />
+        <text name="DFP_ResetNPCs_Title"                    text="Resetovat NPC" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Chamtivost a ekonomická situace NPC budou znovu vygenerovány o půlnoci. Toto nastavení se poté automaticky vypne." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Zobrazit cenový modifikátor" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Při nákupu nebo prodeji pozemků zobrazí aktuální hodnotu cenového modifikátoru." />
+        <text name="DFP_MaxGreed_Title"                     text="Max. faktor chamtivosti" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Maximální cenový faktor pro chamtivost NPC. Změny se okamžitě projeví na cenách. Výchozí: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Min. faktor chamtivosti" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Minimální cenový faktor pro chamtivost NPC. Změny se okamžitě projeví na cenách. Výchozí: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Max. ekonomický faktor" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Maximální cenový faktor pro ekonomickou situaci NPC. Změny se okamžitě projeví na cenách. Výchozí: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Min. ekonomický faktor" />
+        <text name="DFP_MinEco_Tooltip"                     text="Minimální cenový faktor pro ekonomickou situaci NPC. Změny se okamžitě projeví na cenách. Výchozí: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Faktor odrazení" />
+        <text name="DFP_Discourage_Tooltip"                 text="Podíl ceny, který se přičte nebo odečte při nákupu či prodeji pozemku. Slouží k odrazení od překupování pozemků. Změny se okamžitě projeví na cenách. Výchozí: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

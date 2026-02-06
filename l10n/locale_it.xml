@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>it</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Variazione di prezzo:" />
+        <text name="DFP_PriceChange_Hidden"                 text="sconosciuto" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Prezzi dinamici dei terreni" />
+        <text name="DFP_ResetNPCs_Title"                    text="Reimposta PNG" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="L'avidità e la situazione economica dei PNG verranno ricalcolate a mezzanotte. Questa impostazione torna automaticamente su disattivato dopo." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Mostra modificatore di prezzo" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Durante l'acquisto o la vendita di terreni, mostra l'importo attuale del modificatore di prezzo" />
+        <text name="DFP_MaxGreed_Title"                     text="Fattore di avidità massimo" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Fattore di prezzo massimo per l'avidità di un PNG. Le modifiche regoleranno immediatamente i prezzi. Predefinito: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Fattore di avidità minimo" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Fattore di prezzo minimo per l'avidità di un PNG. Le modifiche regoleranno immediatamente i prezzi. Predefinito: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Fattore economico massimo" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Fattore di prezzo massimo per la situazione economica di un PNG. Le modifiche regoleranno immediatamente i prezzi. Predefinito: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Fattore economico minimo" />
+        <text name="DFP_MinEco_Tooltip"                     text="Fattore di prezzo minimo per la situazione economica di un PNG. Le modifiche regoleranno immediatamente i prezzi. Predefinito: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Fattore di scoraggiamento" />
+        <text name="DFP_Discourage_Tooltip"                 text="Frazione del prezzo aggiunta/sottratta quando un terreno viene acquistato/venduto. Pensato per scoraggiare la compravendita speculativa di terreni. Le modifiche regoleranno immediatamente i prezzi. Predefinito: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

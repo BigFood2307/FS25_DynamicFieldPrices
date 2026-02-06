@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>no</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Prisendring:" />
+        <text name="DFP_PriceChange_Hidden"                 text="ukjent" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dynamiske jordpriser" />
+        <text name="DFP_ResetNPCs_Title"                    text="Tilbakestill NPC-er" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Grådighet og økonomisk situasjon for NPC-er vil bli trukket på nytt ved midnatt. Denne innstillingen slås automatisk av etterpå." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Vis prismodifikator" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Ved kjøp eller salg av jorder vises gjeldende prismodifikator." />
+        <text name="DFP_MaxGreed_Title"                     text="Maks grådighetsfaktor" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Maksimal prisfaktor for en NPC sin grådighetsverdi. Endringer justerer prisene umiddelbart. Standard: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Min grådighetsfaktor" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Minimal prisfaktor for en NPC sin grådighetsverdi. Endringer justerer prisene umiddelbart. Standard: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Maks økonomisk faktor" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Maksimal prisfaktor for en NPC sin økonomiske situasjon. Endringer justerer prisene umiddelbart. Standard: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Min økonomisk faktor" />
+        <text name="DFP_MinEco_Tooltip"                     text="Minimal prisfaktor for en NPC sin økonomiske situasjon. Endringer justerer prisene umiddelbart. Standard: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Avskrekkingsfaktor" />
+        <text name="DFP_Discourage_Tooltip"                 text="Andel av prisen som legges til eller trekkes fra ved kjøp eller salg av en jord. Ment for å motvirke hurtig videresalg av jorder. Endringer justerer prisene umiddelbart. Standard: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

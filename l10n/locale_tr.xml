@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>tr</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Fiyat Değişimi:" />
+        <text name="DFP_PriceChange_Hidden"                 text="bilinmiyor" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dinamik Tarla Fiyatları" />
+        <text name="DFP_ResetNPCs_Title"                    text="NPC'leri Sıfırla" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPC'lerin açgözlülük ve ekonomik durumları gece yarısında yeniden belirlenir. Bu ayar işlem sonrasında otomatik olarak kapanır." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Fiyat Çarpanını Göster" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Tarla alım veya satımı sırasında mevcut fiyat çarpan miktarını gösterir." />
+        <text name="DFP_MaxGreed_Title"                     text="Maksimum Açgözlülük Faktörü" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Bir NPC'nin açgözlülük değeri için maksimum fiyat çarpanı. Değişiklikler fiyatları anında etkiler. Varsayılan: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Minimum Açgözlülük Faktörü" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Bir NPC'nin açgözlülük değeri için minimum fiyat çarpanı. Değişiklikler fiyatları anında etkiler. Varsayılan: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Maksimum Ekonomik Faktör" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Bir NPC'nin ekonomik durumu için maksimum fiyat çarpanı. Değişiklikler fiyatları anında etkiler. Varsayılan: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Minimum Ekonomik Faktör" />
+        <text name="DFP_MinEco_Tooltip"                     text="Bir NPC'nin ekonomik durumu için minimum fiyat çarpanı. Değişiklikler fiyatları anında etkiler. Varsayılan: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Caydırma Faktörü" />
+        <text name="DFP_Discourage_Tooltip"                 text="Tarla alım veya satımında fiyata eklenen ya da çıkartılan oran. Tarla alıp satma spekülasyonunu önlemeye yöneliktir. Değişiklikler fiyatları anında etkiler. Varsayılan: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

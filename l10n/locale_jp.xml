@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>jp</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="価格変動：" />
+        <text name="DFP_PriceChange_Hidden"                 text="不明" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="動的農地価格" />
+        <text name="DFP_ResetNPCs_Title"                    text="NPCをリセット" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPCの強欲さと経済状況が深夜0時に再生成されます。この設定はリセット後に自動的にオフになります。" />
+        <text name="DFP_ShowPriceModifier_Title"            text="価格倍率を表示" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="農地の売買時に現在の価格倍率を表示します" />
+        <text name="DFP_MaxGreed_Title"                     text="最大強欲倍率" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="NPCの強欲さに対する最大価格倍率です。変更するとすぐに価格に反映されます。デフォルト: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="最小強欲倍率" />
+        <text name="DFP_MinGreed_Tooltip"                   text="NPCの強欲さに対する最小価格倍率です。変更するとすぐに価格に反映されます。デフォルト: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="最大経済倍率" />
+        <text name="DFP_MaxEco_Tooltip"                     text="NPCの経済状況に対する最大価格倍率です。変更するとすぐに価格に反映されます。デフォルト: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="最小経済倍率" />
+        <text name="DFP_MinEco_Tooltip"                     text="NPCの経済状況に対する最小価格倍率です。変更するとすぐに価格に反映されます。デフォルト: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="抑止倍率" />
+        <text name="DFP_Discourage_Tooltip"                 text="農地の売買時に価格に加減される割合で、農地の転売を抑止するための設定です。変更するとすぐに価格に反映されます。デフォルト: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

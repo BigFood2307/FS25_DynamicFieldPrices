@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>vi</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Thay Đổi Giá:" />
+        <text name="DFP_PriceChange_Hidden"                 text="không xác định" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Giá Thị Trường Động" />
+        <text name="DFP_ResetNPCs_Title"                    text="Đặt Lại NPC" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="Tham lam và tình hình kinh tế của NPC sẽ được xáo trộn lại vào nửa đêm. Cài đặt này sẽ tự động tắt sau đó." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Hiển Thị Bộ Sửa Đổi Giá" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Khi mua hoặc bán cánh đồng, hãy hiển thị mức độ sửa đổi giá hiện tại" />
+        <text name="DFP_MaxGreed_Title"                     text="Hệ Số Tham Lam Tối Đa" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="Hệ số giá tối đa cho giá trị tham lam của NPC. Thay đổi sẽ ngay lập tức điều chỉnh giá. Mặc định: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Hệ Số Tham Lam Tối Thiểu" />
+        <text name="DFP_MinGreed_Tooltip"                   text="Hệ số giá tối thiểu cho giá trị tham lam của NPC. Thay đổi sẽ ngay lập tức điều chỉnh giá. Mặc định: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Hệ Số Kinh Tế Tối Đa" />
+        <text name="DFP_MaxEco_Tooltip"                     text="Hệ số giá tối đa cho tình hình kinh tế của NPC. Thay đổi sẽ ngay lập tức điều chỉnh giá. Mặc định: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Hệ Số Kinh Tế Tối Thiểu" />
+        <text name="DFP_MinEco_Tooltip"                     text="Hệ số giá tối thiểu cho tình hình kinh tế của NPC. Thay đổi sẽ ngay lập tức điều chỉnh giá. Mặc định: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Hệ Số Không Khuyến Khích" />
+        <text name="DFP_Discourage_Tooltip"                 text="Phần giá được thêm/trừ khi một cánh đồng được mua/bán. Nhằm ngăn chặn việc lật đổ cánh đồng. Thay đổi sẽ ngay lập tức điều chỉnh giá. Mặc định: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<locale>fi</locale>
+    <translationContributors>UsedPlus Team (AI-assisted)</translationContributors>
+    <texts>
+        <!-- map context menu -->
+        <text name="DFP_PriceChange_Title"                  text="Hintamuutos:" />
+        <text name="DFP_PriceChange_Hidden"                 text="tuntematon" />
+        <!-- game Settings menu -->
+        <text name="DFP_Settings_Title"                     text="Dynaamiset peltohinnat" />
+        <text name="DFP_ResetNPCs_Title"                    text="Nollaa NPC:t" />
+        <text name="DFP_ResetNPCs_Tooltip"                  text="NPC:iden ahneus ja taloudellinen tilanne arvotaan uudelleen keskiyöllä. Tämä asetus palautuu automaattisesti pois päältä sen jälkeen." />
+        <text name="DFP_ShowPriceModifier_Title"            text="Näytä hintakerroin" />
+        <text name="DFP_ShowPriceModifier_Tooltip"          text="Näytä nykyinen hintakertoimen määrä peltojen oston tai myynnin yhteydessä." />
+        <text name="DFP_MaxGreed_Title"                     text="Suurin ahneuskerroin" />
+        <text name="DFP_MaxGreed_Tooltip"                   text="NPC:n ahneusarvon enimmäishintakerroin. Muutokset vaikuttavat hintoihin välittömästi. Oletus: 1.2 (+20%)" />
+        <text name="DFP_MinGreed_Title"                     text="Pienin ahneuskerroin" />
+        <text name="DFP_MinGreed_Tooltip"                   text="NPC:n ahneusarvon vähimmäishintakerroin. Muutokset vaikuttavat hintoihin välittömästi. Oletus: 0.8 (-20%)" />
+        <text name="DFP_MaxEco_Title"                       text="Suurin talouskerroin" />
+        <text name="DFP_MaxEco_Tooltip"                     text="NPC:n taloudellisen tilanteen enimmäishintakerroin. Muutokset vaikuttavat hintoihin välittömästi. Oletus: 1.6 (+60%)" />
+        <text name="DFP_MinEco_Title"                       text="Pienin talouskerroin" />
+        <text name="DFP_MinEco_Tooltip"                     text="NPC:n taloudellisen tilanteen vähimmäishintakerroin. Muutokset vaikuttavat hintoihin välittömästi. Oletus: 0.6 (-40%)" />
+        <text name="DFP_Discourage_Title"                   text="Ehkäisykerroin" />
+        <text name="DFP_Discourage_Tooltip"                 text="Osuus hinnasta, joka lisätään/vähennetään pellon oston/myynnin yhteydessä. Tarkoitettu estämään peltojen nopeaa jälleenmyyntiä. Muutokset vaikuttavat hintoihin välittömästi. Oletus: 0.1 (+10% / -10%)" />
+    </texts>
+</l10n>
