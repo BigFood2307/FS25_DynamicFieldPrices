@@ -51,11 +51,25 @@ function ChangeDFPDecimalSettingsEvent:run(connection)
     DFPSettings:print("ChangeDFPDecimalSettingsEvent.run");
     DFPSettings.current[self.settingsId] = self.newValue;
 
-    -- recalculate Price with new value
-    DynamicFieldPrices:calcPrice()
-
+    -- [FIX] Only recalculate and broadcast on the server.
+    --
+    -- Previously, calcPrice() was called unconditionally — on both server AND clients.
+    -- The problem: calcPrice() ends with g_server:broadcastEvent(...), but g_server
+    -- is nil on clients. This causes a Lua nil-reference error on every client whenever
+    -- ANY player changes a decimal setting (MinGreed, MaxGreed, MinEco, MaxEco, Discourage).
+    --
+    -- The server already handles everything clients need:
+    --   1. calcPrice() recalculates all field prices on the server
+    --   2. calcPrice() broadcasts DFPPricesChangedEvent to all clients (new prices)
+    --   3. broadcastEvent(self) forwards this settings change to other clients
+    --
+    -- So clients only need to update their local DFPSettings.current (done above).
+    -- They'll receive the updated prices via DFPPricesChangedEvent automatically.
+    --
+    -- This now matches the pattern used by ChangeDFPCheckSettingsEvent:run(), which
+    -- correctly keeps its broadcast inside the g_server guard without calling calcPrice().
     if g_server ~= nil then
+        DynamicFieldPrices:calcPrice()
         g_server:broadcastEvent(self, false)
     end
 end
-

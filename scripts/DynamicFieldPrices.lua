@@ -25,16 +25,48 @@ function DynamicFieldPrices:delete()
 end
 
 function DynamicFieldPrices:onWriteStream(streamId, connection)
-    fls = self.farmlandManager.farmlands
+    -- [FIX] Added 'local' — previously leaked a global variable named 'fls'.
+    -- (Lines 43 and 52 in this file correctly use 'local fls'; these two were missed.)
+    local fls = self.farmlandManager.farmlands
+
+    -- [FIX] Write farmland count + ID-tagged prices for deterministic ordering.
+    --
+    -- Previously, both writer and reader used pairs() to iterate farmlands. In Lua,
+    -- pairs() uses next() internally, which traverses the hash table in an order
+    -- determined by internal bucket layout — NOT by insertion order or key value.
+    --
+    -- On vanilla maps this works because server and client build identical tables
+    -- from the same map data, producing identical hash layouts. But this is a Lua
+    -- implementation detail, not a language guarantee. Custom maps with non-standard
+    -- farmland ID sequences could cause the two sides to iterate differently,
+    -- assigning prices to the wrong fields.
+    --
+    -- By writing (farmlandId, price) pairs, the reader can always map each price
+    -- to the correct field by ID, regardless of iteration order.
+    -- Cost: ~4 extra bytes per farmland — negligible for a once-per-join sync.
+    local count = 0
+    for _ in pairs(fls) do
+        count = count + 1
+    end
+    streamWriteInt32(streamId, count)
+
     for fidx, field in pairs(fls) do
+        streamWriteInt32(streamId, fidx)
         streamWriteFloat32(streamId, field.price)
     end
 end
 
 function DynamicFieldPrices:onReadStream(streamId, connection)
-    fls = self.farmlandManager.farmlands
-    for fidx, field in pairs(fls) do
-        field.price = streamReadFloat32(streamId)
+    local fls = self.farmlandManager.farmlands  -- [FIX] Added 'local'
+
+    -- [FIX] Read ID-tagged prices — order-independent, matches new writeStream format.
+    local count = streamReadInt32(streamId)
+    for i = 1, count do
+        local fidx = streamReadInt32(streamId)
+        local price = streamReadFloat32(streamId)
+        if fls[fidx] ~= nil then
+            fls[fidx].price = price
+        end
     end
 end
 
@@ -43,7 +75,7 @@ function DynamicFieldPrices:onNewPricesReceived(prices)
         local fls = self.farmlandManager.farmlands
         for fidx, field in pairs(fls) do
             field.price = prices[fidx]
-        end	
+        end
     end
 end
 
@@ -215,7 +247,7 @@ function DynamicFieldPrices.showContextBox(self, clickedLand, ...)
         local finalPrice = farmland.price*bcFactor
         if baseprice ~= 0 then
             mult = finalPrice/baseprice
-        end		
+        end
         local difference = string.format("%.1f %%", (mult-1)*100)
         if mult >= 1 then
             difference = "+" .. difference
@@ -232,4 +264,3 @@ end
 addModEventListener(DynamicFieldPrices)
 
 DynamicFieldPrices:init()
-
